@@ -3,8 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
+    <link href="payment-form.css" rel="stylesheet">
   </head>
   <body>
-    <p>This is my page</p>
+    <form action="put">
+      <h1>Payment Form</h1>
+      <p>Required Fields are followed by <strong><abbr title="required">*</abbr></strong></p>
+      
+      <section>
+        <h2>Contact Info</h2>
+        <fieldset>
+          <legend>Title</legend>
+            <ul>
+              <li>
+                <label for="title_1"> 
+                  <input type="radio" id="title_1" name="title" value= "K">
+                  King
+                </label>
+              </li>
+              <li>
+                <label for="title_2" id="title_2" name="titles" value="Q"><input type="radio">
+                Queen
+                </label>
+              </li>
+              <li><label for="title_3" id="title_3" name="titles" value="J"><input type="radio">
+              Joker
+            </label>
+            </li>
+          </ul>
+         </fieldset>
+      <p>
+        <label for="name">
+          <span>Name:</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" id="name" name="username">
+      </p>
+      <p>
+        <label for="email">
+          <span>Email</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="email" id="email" name="usermail">
+      </p>      
+      <p>
+        <label for="pwd">
+          <span>Password</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="password" id="pwd" name="password">
+      </p>
+      </section>
+
+
+    </form>
+
+
   </body>
 </html>
